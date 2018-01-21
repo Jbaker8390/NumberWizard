@@ -18,10 +18,21 @@ public class NumberWizards : MonoBehaviour {
         print("Is the number higher or lower than 500?");
         print("Up = higher, down = lower, return = equal.");
 
+       
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+		if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            print("Up arrow pressed");
+        }else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            print("Down arrow pressed");
+        }else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            print("Return pressed");
+        }
+    }
 }
