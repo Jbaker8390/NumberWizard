@@ -29,13 +29,14 @@ public class NumberWizards : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("Up arrow pressed");
             min = guess;
-            //basic binary tree operation
             guess = (max + min) / 2;
+            print("Higher or lower than " + guess);
         }else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            print("Down arrow pressed");
+            max = guess;
+            guess = (max + min) / 2;
+            print("Higher or lower than " + guess);
         }else if (Input.GetKeyDown(KeyCode.Return))
         {
             print("I won!");
