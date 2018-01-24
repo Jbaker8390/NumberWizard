@@ -30,6 +30,7 @@ public class NumberWizards : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             print("I won!");
+            StartGame();
         }
     }
 
@@ -50,5 +51,6 @@ public class NumberWizards : MonoBehaviour {
     {
         guess = (max + min) / 2;
         print("Higher or lower than " + guess);
+        print("Up = higher, down = lower, return = equal.");
     }
 }
