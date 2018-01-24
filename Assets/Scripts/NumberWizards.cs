@@ -30,6 +30,9 @@ public class NumberWizards : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             print("I won!");
+            max = 1000;
+            min = 1;
+            guess = 500;
             StartGame();
         }
     }
